@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ffo="http://ffo.vn/ontology/v3#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FinancialPeriod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#HighRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#RiskLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FFO_v3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>Financial Fraud Detection Ontology v3.0</rdfs:label>
+    <rdfs:comment>FFO v3.0: Integrated Ontology + XGBoost + LLM pipeline</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#ShellRiskIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.35</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#CashCrunchIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.3</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#LeverageRiskIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.4</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#MediumRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#RiskLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#ReceivableManipulationIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.95</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#AccrualIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.95</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#NonCoreIncomeIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FraudReport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#LowRisk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#RiskLevel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FraudSignal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#EarningsQualityTriangleIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.25</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#RevenuePumpIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://ffo.vn/ontology/v3#FinancialIndicator"/>
+    <ffo:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.75</ffo:hasWeight>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#RiskLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FinancialIndicator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#Company">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ffo.vn/ontology/v3#FraudScore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
